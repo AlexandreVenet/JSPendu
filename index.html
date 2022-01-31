@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<p>Cette page joue de l'audio. Montez le volume.</p>
+	<div>
+        <svg id="DOMSvg" height="270" width="400">
+            <g>
+                <g class="invisible" id="SVGHead">
+                    <circle id="SVGHeadCircle" cx="200" cy="80" r="20" stroke="black" stroke-width="4" fill="white"></circle>
+                    <g>
+                        <rect id="SVGEye1" x="191" y="77" width ="6" height="6" fill="black"/>
+                        <rect id="SVGEye2" x="203" y="77" width ="6" height="6" fill="black"/>
+                    </g>
+                </g>
+                <line class="invisible" id="SVGBody" x1="200" y1="100" x2="200" y2="150" stroke-width="4" stroke="black"></line>
+                <line class="invisible" id="SVGArmL" x1="200" y1="120" x2="180px" y2="150px" stroke-width="4" stroke="black"></line>
+                <line class="invisible" id="SVGArmR" x1="200" y1="120" x2="220px" y2="150px" stroke-width="4" stroke="black"></line>
+                <line class="invisible" id="SVGLegL" x1="200" y1="150" x2="180" y2="190" stroke-width="4" stroke="black"></line>
+                <line class="invisible" id="SVGLegR" x1="200" y1="150" x2="220" y2="190" stroke-width="4" stroke="black"></line>
+            </g>
+            <line class="invisible" id="SVGFloor" x1="10" y1="250" x2="150" y2="250" stroke-width="4" stroke="black"></line>
+            <line class="invisible" id="SVGGibbetV" x1="100" y1="250" x2="100" y2="20" stroke-width="4" stroke="black"></line>
+            <line class="invisible" id="SVGGibbetH" x1="98" y1="20" x2="202" y2="20" stroke-width="4" stroke="black"></line>
+            <line class="invisible" id="SVGRope" x1="200" y1="20" x2="200" y2="60px" stroke-width="4" stroke="black"></line>
+        </svg>
+        <img class="image invisible" id="DOMPoleEmploi" src="poleemploi.jpg" alt="image"/>
+    </div>
+    
+    <audio id="DOMAudioCri" src="cri.mp3">
+        Your browser does not support the
+		<code>audio</code> element.
+    </audio>
+
+	<audio id="DOMAudioGagne" src="MireilleMathieuGagne.mp3">
+		Your browser does not support the
+		<code>audio</code> element.
+    </audio>
+
+	<audio id="DOMAudioPerdu" src="MireilleMathieuPerdu.mp3">
+		Your browser does not support the
+		<code>audio</code> element.
+    </audio>
+	
+    <audio id="DOMAudioOk" src="sf_bahh_degout_02.mp3">
+		Your browser does not support the
+		<code>audio</code> element.
+    </audio>
+	
+	<p>Mot : <span id="DOMUserWord"></span></p>
+	<p>Coups : <span id="DOMCurrentChance">0</span> / 10</p>
+	<p>Lettres utilisées : <span id="DOMLettersUsed"></span></p>
+    <p id="DOMUserInputZone">Entrer une lettre : <input type="text" name="letter" id="DOMLetterField"></p> 
+
+    <p class="notice">Musique : Mireille Mathieu, Bravo tu as gagné</p>
+    <p class="notice">Ouvrir la console pour tout savoir.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

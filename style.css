@@ -1,0 +1,18 @@
+.invisible
+{
+    display:none;
+}
+svg
+{
+    border: 1px solid red;
+}
+.image
+{
+    width: 270px;
+    border: 1px solid red;
+}
+.notice
+{
+    color:darkgrey;
+    font-size: 0.75em;
+}
